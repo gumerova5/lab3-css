@@ -1,0 +1,124 @@
+body {
+    background: #ddd;
+    font-family: Arial;
+    margin: 0;
+}
+
+.wrapper {
+    width: 900px;
+    margin: auto;
+}
+
+/* Шапка */
+header {
+    background: #a8c6df;
+    text-align: center;
+    padding: 20px;
+}
+
+    header h1 {
+        color: red;
+        font-style: italic;
+        letter-spacing: 6px;
+        margin: 0;
+    }
+
+/* Горизонтальное меню */
+.menu {
+    background: #c7d7e5;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+}
+
+    .menu a {
+        display: block;
+        float: left;
+        text-decoration: none;
+        padding: 10px 20px;
+        color: black;
+        font-weight: bold;
+    }
+
+        .menu a:hover {
+            background-color: #a8c6df;
+        }
+
+/* Левая колонка */
+.left {
+    float: left;
+    width: 170px;
+    background: #a8c6df;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin: 5px;
+    box-shadow: 1px 1px gray;
+}
+
+/* Правая колонка */
+.right {
+    float: right;
+    width: 190px;
+    background: #a8c6df;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin: 5px;
+    box-shadow: 1px 1px gray;
+}
+
+/* Центральная колонка */
+.center {
+    overflow: hidden;
+    background: #a8c6df;
+    padding: 20px;
+    margin: 10px 0;
+    margin: 5px;
+    box-shadow: 1px 1px gray;
+}
+
+.icons {
+    width: 420px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Блок с наплывающим эффектом */
+.base {
+    position: relative;
+    width: 120px;
+    height: 90px;
+    border: 2px solid #67f562;
+    background: linear-gradient(to right, #d1f55b, #c2e9ff);
+    font-size: 22px;
+    font-weight: bold;
+    float: left;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.txt {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Наплывающий блок */
+.layer {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 90px;
+    text-decoration: none;
+    color: white;
+    background: rgba(10, 80, 180, 0.45);
+    transition: left 0.3s;
+}
+
+/* При наведении блок наплывает */
+.base:hover .layer {
+    left: 0;
+}
